@@ -4,7 +4,7 @@
 
 
 import numpy as np
-import graph_tool.all as gt
+#import graph_tool.all as gt
 from scipy.sparse import find 
 from tqdm import tqdm
 
