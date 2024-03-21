@@ -41,7 +41,7 @@ def Graph_validation(adj_weigh, ordered_ids, b_in, b_out):
         z_score = (vals[idx] - expected_value) / sigma
         
         # If the z-score is within the acceptable range, add the edge to the set
-        if np.absolute(z_score) <=1:
+        if z_score > 1:
             edge_set.add((ordered_ids[col], ordered_ids[row],vals[idx]))
 
     # Return The set of edges
